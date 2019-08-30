@@ -1,6 +1,6 @@
 {
   "name": "capacitor-brainy-baidulocation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Capacitor百度定位插件",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
