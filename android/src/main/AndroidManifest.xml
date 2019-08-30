@@ -4,7 +4,7 @@
     <application>
       <meta-data
           android:name="com.baidu.lbsapi.API_KEY"
-          android:value="xIUbIT8eP1Yp5rzlSMW7r5tTtg8veBKT" >
+          android:value="8zz8KcHLQaUq4fyDKOuG5OsIwdC9UYjh" >
       </meta-data>
 
       <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
