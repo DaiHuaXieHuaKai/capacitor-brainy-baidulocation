@@ -1,81 +1,89 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
 	package
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:3:7-70
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:3:7-70
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-27:14
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:3-30:14
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:13-71
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:2:13-71
 application
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:4:5-11:19
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:4:5-11:19
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:5:7-8:19
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:5:7-8:19
 	android:value
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:7:11-59
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:7:11-59
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:6:11-50
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:6:11-50
 service#com.baidu.location.f
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:7-112
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:7-112
 	android:process
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:75-100
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:75-100
 	android:enabled
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:52-74
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:52-74
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:16-51
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:10:16-51
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:13:5-97
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:13:5-97
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:13:22-78
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:15:5-95
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:15:5-95
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:15:22-76
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:15:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:17:5-92
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:17:5-92
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:17:22-73
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:17:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:19:5-95
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:19:5-95
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:19:22-76
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:19:22-76
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:21:5-92
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:21:5-92
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:21:22-73
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:21:22-73
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:23:5-97
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:23:5-97
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:23:22-78
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:23:22-78
 uses-permission#android.permission.INTERNET
-ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:25:5-83
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:25:5-83
 	android:name
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:25:22-64
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:25:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:27:5-75
+	android:name
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:27:22-72
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:28:5-67
+	android:name
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml:28:22-65
 uses-sdk
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-		ADDED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
-		INJECTED from D:\capacitor\plugins\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		ADDED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Vue\economic\node_modules\capacitor-brainy-baidulocation\android\src\main\AndroidManifest.xml

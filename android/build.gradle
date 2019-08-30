@@ -28,6 +28,12 @@ android {
     lintOptions {
         abortOnError false
     }
+    sourceSets{
+        main{
+            jniLibs.srcDir 'libs'
+            jni.srcDirs = []
+        }
+    }
 }
 
 repositories {
@@ -35,6 +41,7 @@ repositories {
     jcenter()
     mavenCentral()
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

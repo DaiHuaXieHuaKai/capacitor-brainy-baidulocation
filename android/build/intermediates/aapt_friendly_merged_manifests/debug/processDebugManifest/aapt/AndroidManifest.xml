@@ -21,11 +21,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application>
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="xIUbIT8eP1Yp5rzlSMW7r5tTtg8veBKT" >
+            android:value="8zz8KcHLQaUq4fyDKOuG5OsIwdC9UYjh" >
         </meta-data>
 
         <service
