@@ -1,6 +1,7 @@
 package com.brainy.baidulocation;
 
 import android.Manifest;
+import android.content.pm.PackageManager;
 import android.util.Log;
 
 import com.baidu.location.BDAbstractLocationListener;
@@ -17,23 +18,25 @@ import com.getcapacitor.PluginMethod;
         permissions = {
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.ACCESS_FINE_LOCATION
-        }
+        }, permissionRequestCode = BaiduLocation.PERMISSEION_REQUEST_CODE
 )
 public class BaiduLocation extends Plugin {
 
     public LocationClient locationClient = null;
+    public static final int PERMISSEION_REQUEST_CODE = 1025;
 
     private BDAbstractLocationListener bdAbstractLocationListener = null;
-
-    private static final String INFO_TAG = BaiduLocation.class.getName();
+    private static final String DEBUG_TAG = BaiduLocation.class.getName();
 
     @PluginMethod()
     public void getCurrentPosition(PluginCall call) {
-        Log.i(INFO_TAG, "Ready get location");
+        Log.i(DEBUG_TAG, "Ready get location");
+        call.save();
         if (hasRequiredPermissions()) {
             getPosition(call);
         } else {
-            Log.i(INFO_TAG, "No Permission,start request Permission");
+            Log.i(DEBUG_TAG, "No Permission,start request Permission");
+            saveCall(call);
             pluginRequestAllPermissions();
         }
     }
@@ -102,5 +105,28 @@ public class BaiduLocation extends Plugin {
         locationClient.setLocOption(option);
     }
 
+
+    @Override
+    protected void handleRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.handleRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        Log.i(DEBUG_TAG, "handling request permission result");
+        PluginCall savedCall = getSavedCall();
+        if (savedCall == null) {
+            Log.i(DEBUG_TAG, "No stored plugin call for permissions request result");
+            return;
+        }
+
+        for (int result : grantResults) {
+            if (result == PackageManager.PERMISSION_DENIED) {
+                savedCall.error("User denied permission");
+                return;
+            }
+        }
+
+        if (requestCode == PERMISSEION_REQUEST_CODE) {
+            getPosition(savedCall);
+        }
+    }
 }
 

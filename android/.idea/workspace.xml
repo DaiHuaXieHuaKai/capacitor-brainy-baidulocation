@@ -20,13 +20,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brainy/baidulocation/BaiduLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="158">
+              <caret line="119" column="41" lean-forward="true" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getPosition#0;class#BaiduLocation#0" />
-                <element signature="e#1326#1899#0" expanded="true" />
-                <element signature="e#1898#1899#0" expanded="true" />
                 <element signature="method#setOptions#0;class#BaiduLocation#0" />
               </folding>
             </state>
@@ -36,8 +33,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor/src/main/java/com/getcapacitor/PluginCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="254" column="18" selection-start-line="254" selection-start-column="14" selection-end-line="254" selection-end-column="18" />
+            <state relative-caret-position="360">
+              <caret line="255" column="19" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="19" />
+              <folding>
+                <element signature="e#6502#6503#0" expanded="true" />
+                <element signature="e#6534#6535#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,10 +88,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-49" />
-    <option name="y" value="363" />
-    <option name="width" value="1941" />
-    <option name="height" value="1055" />
+    <option name="x" value="189" />
+    <option name="y" value="199" />
+    <option name="width" value="1943" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -213,7 +214,7 @@
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.5554172" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.23287672" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
@@ -267,13 +268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor/src/main/java/com/getcapacitor/PluginCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="254" column="18" selection-start-line="254" selection-start-column="14" selection-end-line="254" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brainy/baidulocation/MyLocationListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -284,15 +278,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor/src/main/java/com/getcapacitor/Plugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
+          <folding>
+            <element signature="e#3907#3908#0" expanded="true" />
+            <element signature="e#3942#3943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor/src/main/java/com/getcapacitor/PluginCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="255" column="19" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="19" />
+          <folding>
+            <element signature="e#6502#6503#0" expanded="true" />
+            <element signature="e#6534#6535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brainy/baidulocation/BaiduLocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="158">
+          <caret line="119" column="41" lean-forward="true" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getPosition#0;class#BaiduLocation#0" />
-            <element signature="e#1326#1899#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
             <element signature="method#setOptions#0;class#BaiduLocation#0" />
           </folding>
         </state>
