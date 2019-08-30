@@ -30,12 +30,12 @@ public class BaiduLocation extends Plugin {
 
     @PluginMethod()
     public void getCurrentPosition(PluginCall call) {
-        Log.i(DEBUG_TAG, "Ready get location");
+        Log.d(DEBUG_TAG, "Ready get location");
         call.save();
         if (hasRequiredPermissions()) {
             getPosition(call);
         } else {
-            Log.i(DEBUG_TAG, "No Permission,start request Permission");
+            Log.d(DEBUG_TAG, "No Permission,start request Permission");
             saveCall(call);
             pluginRequestAllPermissions();
         }
@@ -46,6 +46,7 @@ public class BaiduLocation extends Plugin {
         bdAbstractLocationListener = new BDAbstractLocationListener() {
             @Override
             public void onReceiveLocation(BDLocation bdLocation) {
+                Log.d(DEBUG_TAG, "Recieved Location Data");
                 double latitude = bdLocation.getLatitude();    //获取纬度信息
                 double longitude = bdLocation.getLongitude();    //获取经度信息
                 float radius = bdLocation.getRadius();    //获取定位精度，默认值为0.0f
@@ -110,10 +111,10 @@ public class BaiduLocation extends Plugin {
     protected void handleRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.handleRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        Log.i(DEBUG_TAG, "handling request permission result");
+        Log.d(DEBUG_TAG, "handling request permission result");
         PluginCall savedCall = getSavedCall();
         if (savedCall == null) {
-            Log.i(DEBUG_TAG, "No stored plugin call for permissions request result");
+            Log.d(DEBUG_TAG, "No stored plugin call for permissions request result");
             return;
         }
 
