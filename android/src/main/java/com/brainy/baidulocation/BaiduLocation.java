@@ -47,18 +47,25 @@ public class BaiduLocation extends Plugin {
             @Override
             public void onReceiveLocation(BDLocation bdLocation) {
                 Log.d(DEBUG_TAG, "Recieved Location Data");
-                double latitude = bdLocation.getLatitude();    //获取纬度信息
-                double longitude = bdLocation.getLongitude();    //获取经度信息
-                float radius = bdLocation.getRadius();    //获取定位精度，默认值为0.0f
-                String coorType = bdLocation.getCoorType();//获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
-                int errorCode = bdLocation.getLocType();//获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
-                JSObject ret = new JSObject();
-                ret.put("latitude", latitude);
-                ret.put("longitude", longitude);
-                ret.put("radius", radius);
-                ret.put("coorType", coorType);
-                ret.put("errorCode", errorCode);
-                call.success(ret);
+                try{
+                    double latitude = bdLocation.getLatitude();    //获取纬度信息
+                    double longitude = bdLocation.getLongitude();    //获取经度信息
+                    float radius = bdLocation.getRadius();    //获取定位精度，默认值为0.0f
+                    String coorType = bdLocation.getCoorType();//获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
+                    int errorCode = bdLocation.getLocType();//获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
+                    JSObject ret = new JSObject();
+                    ret.put("latitude", latitude);
+                    ret.put("longitude", longitude);
+                    ret.put("radius", radius);
+                    ret.put("coorType", coorType);
+                    ret.put("errorCode", errorCode);
+                    call.success(ret);
+                }catch(Exception e){
+
+                }finally{
+                  locationClient.stop();
+                }
+
             }
         };
 
@@ -67,6 +74,8 @@ public class BaiduLocation extends Plugin {
         setOptions();
         //注册监听函数
         locationClient.registerLocationListener(bdAbstractLocationListener);
+        if(locationClient.isStarted())
+            locationClient.stop();
         locationClient.start();
     }
 
@@ -83,7 +92,7 @@ public class BaiduLocation extends Plugin {
         //BD09ll：百度经纬度坐标；
         //BD09：百度墨卡托坐标；
         //海外地区定位，无需设置坐标类型，统一返回WGS84类型坐标
-        option.setScanSpan(1000);
+        option.setScanSpan(0);
         //可选，设置发起定位请求的间隔，int类型，单位ms
         //如果设置为0，则代表单次定位，即仅定位一次，默认为0
         //如果设置非0，需设置1000ms以上才有效
