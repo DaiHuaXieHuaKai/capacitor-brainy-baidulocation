@@ -48,17 +48,25 @@ public class BaiduLocation extends Plugin {
             public void onReceiveLocation(BDLocation bdLocation) {
                 Log.d(DEBUG_TAG, "Recieved Location Data");
                 try{
-                    double latitude = bdLocation.getLatitude();    //获取纬度信息
-                    double longitude = bdLocation.getLongitude();    //获取经度信息
-                    float radius = bdLocation.getRadius();    //获取定位精度，默认值为0.0f
-                    String coorType = bdLocation.getCoorType();//获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
-                    int errorCode = bdLocation.getLocType();//获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
                     JSObject ret = new JSObject();
-                    ret.put("latitude", latitude);
-                    ret.put("longitude", longitude);
-                    ret.put("radius", radius);
-                    ret.put("coorType", coorType);
-                    ret.put("errorCode", errorCode);
+                    ret.put("latitude", bdLocation.getLatitude());//获取纬度信息
+                    ret.put("longitude", bdLocation.getLongitude()); //获取经度信息
+                    ret.put("radius", bdLocation.getRadius());//获取定位精度，默认值为0.0f
+                    ret.put("coorType", bdLocation.getCoorType());//获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
+                    ret.put("errorCode",  bdLocation.getLocType());//获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
+                    ret.put("address",bdLocation.getAddrStr());//获取详细地址信息
+                    ret.put("city",bdLocation.getCity());//获取城市
+                    ret.put("cityCode",bdLocation.getCityCode());//获取城市编码
+                    ret.put("country",bdLocation.getCountry());//获取国家
+                    ret.put("countryCode",bdLocation.getCountryCode());//获取国家编码
+                    ret.put("province",bdLocation.getProvince());//获取省
+                    ret.put("district",bdLocation.getDistrict());//获取区/县信息
+                    ret.put("speed",bdLocation.getSpeed());//获取速度
+                    ret.put("street",bdLocation.getStreet());//获取街道
+                    ret.put("streetNumber",bdLocation.getStreetNumber());//获取街道编号
+                    ret.put("town",bdLocation.getTown());//获取镇信息
+                    ret.put("hasAddr",bdLocation.hasAddr());//是否含有地址信息
+                    ret.put("altitude",bdLocation.getAltitude());//获取高度信息，目前只有是GPS定位结果时或者设置LocationClientOption.setIsNeedAltitude(true)时才有效，单位米
                     call.success(ret);
                 }catch(Exception e){
 
@@ -74,8 +82,9 @@ public class BaiduLocation extends Plugin {
         setOptions();
         //注册监听函数
         locationClient.registerLocationListener(bdAbstractLocationListener);
-        if(locationClient.isStarted())
+        if(locationClient.isStarted()){
             locationClient.stop();
+        }
         locationClient.start();
     }
 
@@ -111,6 +120,14 @@ public class BaiduLocation extends Plugin {
         //如果设置了该接口，首次启动定位时，会先判断当前Wi-Fi是否超出有效期，若超出有效期，会先重新扫描Wi-Fi，然后定位
         option.setEnableSimulateGps(false);
         //可选，设置是否需要过滤GPS仿真结果，默认需要，即参数为false
+        option.setIsNeedAddress(true);
+        ///可选，是否需要地址信息，默认为不需要，即参数为false
+        //如果开发者需要获得当前点的地址信息，此处必须为true
+        option.setIsNeedLocationDescribe(true);
+        //可选，是否需要位置描述信息，默认为不需要，即参数为false
+        //如果开发者需要获得当前点的位置信息，此处必须为true
+
+
 
         locationClient.setLocOption(option);
     }
